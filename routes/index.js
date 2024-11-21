@@ -9,11 +9,11 @@ router.get("/", (req, res) => {
     const postsArray = []
 
     postsQuery
-        .then((res) => {
-            res.forEach((post) => {
+        .then((response) => {
+            response.forEach((post) => {
                 postsArray.push({ id: post.id, ...post.data() })
             })
-            response.send(postsArray)
+            res.send(postsArray)
         })
         .catch((error) => {
             console.log(error)

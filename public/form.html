@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family:Arial, Helvetica, sans-serif;">
+    <h1>Create Post</h1>
+    <form action="/create/submit" style="display:flex; gap:10px; flex-direction:column; width:400px;">
+        <label for="title">
+            Title
+            <input name="title" type="text" placeholder="My great post" />
+        </label>
+        <label for="postText">
+            Text
+            <input name="postText" type="text" placeholder="My story" />
+        </label>
+        <label for="author">
+            Author
+            <input name="author" type="text" placeholder="Henry" />
+        </label>
+        <button type="submit" style="width:100px; height:30px;">Submit</button>
+    </form>
+</body>
+</html>
